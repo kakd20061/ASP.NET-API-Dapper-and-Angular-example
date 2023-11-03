@@ -60,7 +60,7 @@ namespace CustomersApi.Controllers
             }
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}", Name = "DeleteCustomer")]
         public ActionResult Delete(int id)
         {
             try
@@ -74,7 +74,8 @@ namespace CustomersApi.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPut("{id}", Name = "UpdateCustomer")]
+
         public ActionResult Update(int id, CustomerDto customer)
         {
             try

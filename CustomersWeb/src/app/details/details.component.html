@@ -1,0 +1,96 @@
+<form
+  [formGroup]="customerForm"
+  class="m-5 w-50 mx-auto"
+  (ngSubmit)="UpdateData(customerForm.value)"
+>
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput1"
+      placeholder="Name"
+      name="name"
+      formControlName="name"
+    />
+    <label for="floatingInput">Name</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput2"
+      placeholder="Last name"
+      name="lastname"
+      formControlName="lastName"
+    />
+    <label for="floatingInput">Last name</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input
+      type="email"
+      class="form-control"
+      id="floatingInput3"
+      placeholder="Email"
+      name="email"
+      formControlName="email"
+    />
+    <label for="floatingInput">Email</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput4"
+      placeholder="Phone"
+      name="phone"
+      formControlName="phone"
+    />
+    <label for="floatingInput">Phone</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput5"
+      placeholder="Country"
+      name="country"
+      formControlName="country"
+    />
+    <label for="floatingInput">Country</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput6"
+      placeholder="City"
+      name="city"
+      formControlName="city"
+    />
+    <label for="floatingInput">City</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput7"
+      placeholder="Postal code"
+      name="postalcode"
+      formControlName="postalCode"
+    />
+    <label for="floatingInput">Postal code</label>
+  </div>
+  <input type="submit" class="btn btn-warning" value="Update" />
+  <input
+    type="button"
+    class="btn btn-danger mx-2"
+    (click)="DeleteData()"
+    value="Delete"
+  />
+</form>

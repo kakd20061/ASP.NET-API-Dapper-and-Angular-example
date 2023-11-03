@@ -1,0 +1,90 @@
+<form
+  #customerForm="ngForm"
+  (ngSubmit)="GetCustomerFormData(customerForm.value)"
+  class="m-5 w-50 mx-auto"
+>
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput1"
+      placeholder="Name"
+      name="name"
+      ngModel
+    />
+    <label for="floatingInput">Name</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput2"
+      placeholder="Last name"
+      name="lastname"
+      ngModel
+    />
+    <label for="floatingInput">Last name</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input
+      type="email"
+      class="form-control"
+      id="floatingInput3"
+      placeholder="Email"
+      name="email"
+      ngModel
+    />
+    <label for="floatingInput">Email</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput4"
+      placeholder="Phone"
+      name="phone"
+      ngModel
+    />
+    <label for="floatingInput">Phone</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput5"
+      placeholder="Country"
+      name="country"
+      ngModel
+    />
+    <label for="floatingInput">Country</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput6"
+      placeholder="City"
+      name="city"
+      ngModel
+    />
+    <label for="floatingInput">City</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput7"
+      placeholder="Postal code"
+      name="postalcode"
+      ngModel
+    />
+    <label for="floatingInput">Postal code</label>
+  </div>
+  <input type="submit" class="btn btn-success" />
+</form>
